@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — MBTA SMS Arrivals</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+      color: #1a1a1a;
+      background: #fff;
+      max-width: 740px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+    }
+    header { margin-bottom: 40px; padding-bottom: 24px; border-bottom: 1px solid #e5e5e5; }
+    header p { font-size: 14px; color: #666; margin-top: 8px; }
+    h1 { font-size: 28px; font-weight: 600; letter-spacing: -0.3px; }
+    h2 { font-size: 18px; font-weight: 600; margin-top: 36px; margin-bottom: 10px; }
+    p { margin-bottom: 14px; }
+    ul { margin: 0 0 14px 24px; }
+    li { margin-bottom: 6px; }
+    a { color: #0066cc; }
+    footer { margin-top: 56px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 13px; color: #888; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Privacy Policy</h1>
+    <p>MBTA SMS Arrivals &nbsp;|&nbsp; Last updated: <span id="date"></span></p>
+  </header>
+
+  <h2>Overview</h2>
+  <p>MBTA SMS Arrivals ("the Service") is a personal, non-commercial tool that allows users to text a stop name and receive upcoming MBTA bus and train arrival times by SMS. This Privacy Policy explains what information is handled when you use the Service.</p>
+
+  <h2>Information we receive</h2>
+  <p>When you send an SMS to the Service, the following information is received through our SMS provider (Twilio):</p>
+  <ul>
+    <li>Your mobile phone number</li>
+    <li>The text content of your message (the stop name you send)</li>
+    <li>The date and time of your message</li>
+  </ul>
+  <p>No account creation, registration, or personal identification is required or requested.</p>
+
+  <h2>How we use your information</h2>
+  <p>Your phone number and message text are used solely to:</p>
+  <ul>
+    <li>Look up MBTA arrival times for the stop name you provided</li>
+    <li>Send the arrival time reply back to your phone number</li>
+  </ul>
+  <p>We do not use your information for marketing, advertising, profiling, or any purpose beyond fulfilling your transit lookup request.</p>
+
+  <h2>Data retention</h2>
+  <p>We do not maintain a database of user messages or phone numbers. Each request is processed in real time and discarded. Twilio, our SMS provider, may retain message metadata in accordance with their own privacy policy, available at <a href="https://www.twilio.com/en-us/legal/privacy" target="_blank" rel="noopener">twilio.com/legal/privacy</a>.</p>
+
+  <h2>Data sharing</h2>
+  <p>We do not sell, rent, trade, or share your personal information with third parties, except as necessary to operate the Service:</p>
+  <ul>
+    <li><strong>Twilio</strong> — routes SMS messages between your phone and the Service.</li>
+    <li><strong>MBTA API</strong> — receives only the stop name (not your phone number or any identifying information) to return arrival times.</li>
+  </ul>
+  <p>We do not share data with advertisers, data brokers, or analytics services.</p>
+
+  <h2>Children's privacy</h2>
+  <p>The Service is not directed at children under 13 and we do not knowingly collect information from children under 13.</p>
+
+  <h2>Your rights</h2>
+  <p>Because we do not retain personal data beyond individual requests, there is nothing stored that can be accessed, corrected, or deleted. If you have questions about data handled by Twilio, please refer to Twilio's privacy policy directly.</p>
+
+  <h2>Security</h2>
+  <p>SMS is not an encrypted communication channel. Do not send sensitive personal information via the Service. The Service is designed to receive only public transit stop names.</p>
+
+  <h2>Changes to this policy</h2>
+  <p>We may update this Privacy Policy from time to time. Changes will be reflected by updating the "Last updated" date at the top of this page.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about this Privacy Policy can be directed to the repository owner via the GitHub repository for this project.</p>
+
+  <footer>
+    <p>MBTA SMS Arrivals — Personal non-commercial project. Not affiliated with or endorsed by the MBTA.</p>
+  </footer>
+
+  <script>
+    document.getElementById('date').textContent = new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+  </script>
+
+</body>
+</html>
